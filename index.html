@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermanos Calderón | Panadería Artesanal</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav id="sticky-nav" class="hidden">
+        <div class="nav-container">
+
+            <div class="brand-container">
+                <img src="assets/images/logo.PNG" alt="Logo" class="nav-logo-img">
+                <span class="nav-logo">Hermanos Calderón</span>
+            </div>
+            <div class="nav-cart">
+                <!-- Simple SVG Cart Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <header class="hero-section" id="home">
+        <div class="parallax-bg" id="hero-bg"></div>
+        <div class="hero-content">
+            <img src="assets/images/logomarca_de_agua.png" alt="Hermanos Calderón"
+                class="hero-watermark animate-reveal delay-1">
+            <h1 class="hero-title">
+                <span class="slide-left">Hermanos</span>
+                <span class="slide-right">Calderón</span>
+            </h1>
+            <p class="subtitle animate-reveal delay-2">Tradición que se comparte</p>
+            <a href="#products" class="cta-button animate-reveal delay-3">Ver Productos</a>
+        </div>
+    </header>
+
+
+    <!-- Products Section -->
+    <section class="products-section section-padding" id="products">
+        <div class="container">
+            <h2 class="section-title">Productos mas Vendidos</h2>
+            <hr class="separator">
+            <div class="products-container">
+                <!-- Product 1 -->
+                <article class="product-row fade-in-out">
+                    <div class="product-visual">
+                        <img src="assets/images/turron4.png" alt="Turrón de Doña Pepa">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Turrón de 900.00 gr</h3>
+                        <p class="desc">Miel de frutas naturales, grajeas coloridas y una masa suave que se deshace en
+                            tu boca. Una tradición limeña inigualable.</p>
+                        <div class="price-list">
+                            <p><strong>Unidad:</strong> S/ 18.00</p>
+                            <p><strong>Mayor:</strong> S/ 12.00</p>
+                        </div>
+                        <button class="btn-outline">AÑADIR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <hr class="separator">
+
+                <!-- Product 2 -->
+                <article class="product-row fade-in-out">
+                    <div class="product-visual">
+                        <img src="assets/images/paneton3.png" alt="Panetón Premium">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Panetón Clasico 900.00 gr</h3>
+                        <p class="desc">Receta clásica con abundantes pasas y frutas confitadas. Fermentación natural de
+                            48 horas para una textura esponjosa.</p>
+                        <div class="price-list">
+                            <p><strong>Unidad:</strong> S/ 15.00</p>
+                            <p><strong>Mayor:</strong> S/ 9.00</p>
+                        </div>
+                        <button class="btn-outline">AÑADIR AL CARRITO</button>
+                    </div>
+                </article>
+
+                <hr class="separator">
+
+                <!-- Product 3 -->
+                <article class="product-row fade-in-out">
+                    <div class="product-visual">
+                        <img src="assets/images/paneton_integral.png" alt="Panetón Integral">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Panetón Integral</h3>
+                        <p class="desc">El sabor de siempre en una versión más saludable con harina integral 100%,
+                            frutos secos y endulzado con panela.</p>
+                        <div class="price-list">
+                            <p><strong>Unidad:</strong> S/ 35.00</p>
+                            <p><strong>Mayor:</strong> S/ 28.00</p>
+                        </div>
+                        <button class="btn-outline">AÑADIR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products Carousel Section -->
+    <section class="all-products section-padding" id="all-products">
+        <h2 class="section-title white-text">Todos Nuestros Productos</h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Duplicate items for infinite scroll effect -->
+                <div class="carousel-item"><img src="assets/images/turron4.png" alt="Turrón"></div>
+                <div class="carousel-item"><img src="assets/images/paneton3.png" alt="Panetón"></div>
+                <div class="carousel-item"><img src="assets/images/paneton_integral.png" alt="Integral"></div>
+                <div class="carousel-item"><img src="assets/images/turron.png" alt="Turrón Clasico"></div>
+                <div class="carousel-item"><img src="assets/images/paneton.png" alt="Panetón Box"></div>
+
+                <!-- Double items for seamless loop -->
+                <div class="carousel-item"><img src="assets/images/turron4.png" alt="Turrón"></div>
+                <div class="carousel-item"><img src="assets/images/paneton3.png" alt="Panetón"></div>
+                <div class="carousel-item"><img src="assets/images/paneton_integral.png" alt="Integral"></div>
+                <div class="carousel-item"><img src="assets/images/turron.png" alt="Turrón Clasico"></div>
+                <div class="carousel-item"><img src="assets/images/paneton.png" alt="Panetón Box"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Evidence Section -->
+    <section class="evidence-section section-padding" id="evidence">
+        <div class="container">
+            <h2 class="section-title">Clientes Felices</h2>
+            <div class="evidence-grid">
+                <!-- Card 1 -->
+                <div class="evidence-card fade-in-out">
+                    <img src="assets/images/entrega1.webp" alt="Cliente Feliz" class="client-photo">
+                    <div class="card-content">
+                        <p class="client-comment">"¡El mejor panetón integral que he probado! Súper suave y el sabor es
+                            increíble."</p>
+                        <span class="client-name">- María G.</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="evidence-card fade-in-out" style="animation-delay: 0.2s;">
+                    <img src="assets/images/entrega2.jpg" alt="Cliente Satisfecho" class="client-photo">
+                    <div class="card-content">
+                        <p class="client-comment">"Llegó calientito y a tiempo. La presentación es hermosa, ideal para
+                            regalo."</p>
+                        <span class="client-name">- Carlos R.</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="evidence-card fade-in-out" style="animation-delay: 0.4s;">
+                    <img src="assets/images/entrega3.jpg" alt="Cliente Contento" class="client-photo">
+                    <div class="card-content">
+                        <p class="client-comment">"Se nota la calidad de los ingredientes. Definitivamente pediré más
+                            para Navidad."</p>
+                        <span class="client-name">- Ana L.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Clients -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <h2 class="section-title white-text">Contáctanos</h2>
+            <p style="max-width: 600px; margin: 0 auto; color: #fff;">
+                ¿Listo para probar la tradición? Escríbenos para pedidos corporativos o personales.
+            </p>
+            <div class="contact-info">
+                <p>📍 Av. Los Horizontes 123, Lima</p>
+                <p>📞 +51 987 654 321</p>
+                <p>✉️ pedidos@hermanoscalderon.com</p>
+
+                <div style="margin-top: 30px;">
+                    <!-- Simple Text Icons for Vanilla layout -->
+                    <a href="#"
+                        style="margin: 0 15px; font-weight: bold; color: #fff; text-decoration: none;">FACEBOOK</a>
+                    <a href="#"
+                        style="margin: 0 15px; font-weight: bold; color: #fff; text-decoration: none;">INSTAGRAM</a>
+                    <a href="#"
+                        style="margin: 0 15px; font-weight: bold; color: #fff; text-decoration: none;">WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2026 Panadería Hermanos Calderón - Todos los derechos reservados</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
